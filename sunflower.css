@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    overflow: hidden;
+    overflow: visible;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -26,6 +26,8 @@
     transform-origin: center bottom;
     transform: scale(2);
     animation: sf-shrink 1.5s ease-in forwards 4s;
+    /* Push ground down so stems root at the very bottom */
+    margin-bottom: -8%;
 }
 
 .flower-container {
@@ -36,15 +38,15 @@
 }
 
 .flower-container:first-child  { top: 50%;  left: 50%; }
-.flower-container:nth-child(2) { top: 45%;  left: 30%; width: 8%; }
-.flower-container:nth-child(3) { top: 45%;  left: 70%; width: 8%; }
-.flower-container:nth-child(4) { top: 85%;  left: 95%; width: 20%; }
-.flower-container:nth-child(5) { top: 130%; left: 30%; width: 30%; }
-.flower-container:nth-child(6) { top: 60%;  left: 10%; width: 12%; }
-.flower-container:nth-child(7) { top: 20%;  left: 15%; width: 6%; }
-.flower-container:nth-child(8) { top: 15%;  left: 35%; width: 5%; }
-.flower-container:nth-child(9) { top: 26%;  left: 85%; width: 7%; }
-.flower-container:nth-child(10){ top: 22%;  left: 60%; width: 6.5%; }
+.flower-container:nth-child(2) { top: 55%;  left: 30%; width: 8%; }
+.flower-container:nth-child(3) { top: 55%;  left: 70%; width: 8%; }
+.flower-container:nth-child(4) { top: 75%;  left: 90%; width: 18%; }
+.flower-container:nth-child(5) { top: 80%;  left: 25%; width: 28%; }
+.flower-container:nth-child(6) { top: 65%;  left: 10%; width: 12%; }
+.flower-container:nth-child(7) { top: 35%;  left: 15%; width: 6%; }
+.flower-container:nth-child(8) { top: 30%;  left: 38%; width: 5%; }
+.flower-container:nth-child(9) { top: 38%;  left: 82%; width: 7%; }
+.flower-container:nth-child(10){ top: 32%;  left: 60%; width: 6.5%; }
 
 .flower-container {
     width: 10%;
